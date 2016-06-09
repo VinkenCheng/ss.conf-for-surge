@@ -1,5 +1,5 @@
 ##ss.conf for Surge!
-This is a conf file for Surge!
+This is a conf file for Surge copy from [R0uter/ss.conf-for-surge](https://github.com/R0uter/ss.conf-for-surge)!
 
 In order to use Shadowsocks in Surge.
 
@@ -31,10 +31,9 @@ change your ss server config, like server ip, server port, and your password.
 
     [Proxy]
     💊DIRECT = direct
-    🇭🇰HK = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/R0uter/ss.conf-for-surge/raw/master/ss.module
-    🇸🇬SG = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/R0uter/ss.conf-for-surge/raw/master/ss.module
-    🇯🇵JP = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/R0uter/ss.conf-for-surge/raw/master/ss.module
-    🇺🇸US = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/R0uter/ss.conf-for-surge/raw/master/ss.module
+    🇭🇰HK = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
+    🇯🇵JP = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
+    🇺🇸US = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
     
     
 Then you need to edit proxy group for auto speed test function.
