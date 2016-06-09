@@ -1,5 +1,5 @@
 # SS config file for surge with gfw list 
-# updated on 2016-06-09 17:16:39
+# updated on 2016-06-09 17:40:53
 
 DOMAIN-SUFFIX,4tern.com,Proxy
 DOMAIN-SUFFIX,85.17.73.31,Proxy

@@ -1,10 +1,8 @@
 [Proxy]
 💊DIRECT = direct
-🇭🇰HK = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
-🇯🇵JP = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
-🇺🇸US = custom,your_server_here,your_port_here,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
+🇯🇵JP = custom,server,port,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
 
 [Proxy Group]
 ChinaProxy = select,💊DIRECT
-Proxy = select,🇯🇵JP,🇭🇰HK,🇺🇸US,@Auto,💊DIRECT
-@Auto = url-test,🇯🇵JP,🇭🇰HK,🇺🇸US,url=http://www.gstatic.com/generate_204
+Proxy = select,🇯🇵JP,@Auto,💊DIRECT
+@Auto = url-test,🇯🇵JP,url=http://www.gstatic.com/generate_204
