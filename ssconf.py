@@ -36,7 +36,7 @@ def whiteListCheck():
     # domainList = []
     whitelist = codecs.open('./list/whitelist','r','utf-8')
     whitelistTxt = codecs.open('./list/whitelist.txt','w','utf-8')
-    whitelistTxt.write('// updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S" + '\n'))
+    whitelistTxt.write('# updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S" + '\n'))
     # Write list
     for line in whitelist.readlines():
         
@@ -61,8 +61,8 @@ def getGfwList():
     tmpfile = './list/tmp'
 
     gfwListTxt = codecs.open('./list/gfwlist.txt', 'w', 'utf-8')
-    gfwListTxt.write('// SS config file for surge with gfw list \n')
-    gfwListTxt.write('// updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
+    gfwListTxt.write('# SS config file for surge with gfw list \n')
+    gfwListTxt.write('# updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
     gfwListTxt.write('\n')
 
     try:
@@ -114,9 +114,10 @@ def getAdList():
     domain_pattern = '(\#?[\w\-\_]+\,[\/\w\.\-\_]+\,REJECT)[\/\*]*'
 
     fs = codecs.open(outfile, 'w', 'utf-8')
-    # fs.write('// thx  https://gist.github.com/iyee/2e27c124af2f7a4f0d5a \n')
-    fs.write('// This AD list is not update anymore... \n')
-    # fs.write('// updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
+    fs.write('# Ad\'s list come from iyee/main.conf(dead :( ). \n')
+    fs.write('# thx  https://gist.github.com/iyee/2e27c124af2f7a4f0d5a \n')
+    fs.write('# This AD list is not update anymore... \n')
+    fs.write('# updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
     fs.write('\n')
 
 

@@ -1,26 +1,43 @@
 [General]
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
-dns-server = 114.114.114.114, 114.114.115.115
+dns-server = 208.67.222.222,208.67.220.220,223.6.6.6,223.5.5.5,114.114.114.114,114.114.115.115
 loglevel = notify
 
 __Proxy__
 
+
+[Host]
+
+
+
 [Rule]
-//for Google blogspot 
+# for Google blogspot 
 DOMAIN-KEYWORD,google,Proxy,force-remote-dns
 DOMAIN-KEYWORD,blogspot,Proxy,force-remote-dns
-//for BBC 
+# for BBC 
 DOMAIN-KEYWORD,bbc,Proxy,force-remote-dns
 
-// AD Block
+
+# AD Block
+
+# Feng By @撸大湿太 
+DOMAIN,yes1.feng.com,REJECT
+# SpeedTest 
+DOMAIN,ads.ookla.com,REJECT
+DOMAIN,cdn.ads.ookla.com,REJECT
+# 百度云管家 
+DOMAIN-KEYWORD,monitor.jpg?xcode,REJECT
+# Unknow 
+IP-CIDR,123.125.117.0/22,REJECT,no-resolve
+
 __ADBLOCK__
 
 
-// proxy list from gfwlist!
+# proxy list from gfwlist!
 __GFWLIST__
 
-// Telegram
+# Telegram
 IP-CIDR,91.108.4.0/22,Proxy,no-resolve
 IP-CIDR,91.108.56.0/22,Proxy,no-resolve
 IP-CIDR,109.239.140.0/24,Proxy,no-resolve
@@ -59,7 +76,8 @@ IP-CIDR,67.202.0.0/18,Proxy
 
 FINAL,ChinaProxy
 
- [URL Rewrite]
- ^http://www.google.cn http://www.google.com.hk
- ^http://m.baidu.com/s\?from=1099b&word= http://google.com/search\?q=
- ^http://www.baidu.com/s\?wd= http://google.com/search\?q=
+
+[URL Rewrite]
+^http://www.google.cn http://www.google.com.hk
+^http://m.baidu.com/s\?from=1099b&word= http://google.com/search\?q=
+^http://www.baidu.com/s\?wd= http://google.com/search\?q=
