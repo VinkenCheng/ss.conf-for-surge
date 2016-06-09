@@ -57,8 +57,13 @@ def getGfwList():
 
     comment_pattern = '^\!|\[|^@@|^\d+\.\d+\.\d+\.\d+'
     domain_pattern = '([\w\-\_]+\.[\w\.\-\_]+)[\/\*]*'
-
+    
+    # gfw list
     tmpfile = './list/tmp'
+    # force-remote-dns list
+    frdfile = './template/force_remote_dns_list'
+    
+    # TODO add 'force-remote-dns'
 
     gfwListTxt = codecs.open('./list/gfwlist.txt', 'w', 'utf-8')
     gfwListTxt.write('# SS config file for surge with gfw list \n')
@@ -95,7 +100,7 @@ def getGfwList():
                  found = domainList.index(domain[0])
              except ValueError:
                  domainList.append(domain[0])
-                 gfwListTxt.write('DOMAIN-SUFFIX,%s,Proxy,force-remote-dns\n' % (domain[0]))
+                 gfwListTxt.write('DOMAIN-SUFFIX,%s,Proxy\n' % (domain[0]))
          else:
              continue
 
