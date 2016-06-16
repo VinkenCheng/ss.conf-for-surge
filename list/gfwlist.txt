@@ -1,5 +1,5 @@
 # SS config file for surge with gfw list 
-# updated on 2016-06-09 17:40:53
+# updated on 2016-06-16 16:18:26
 
 DOMAIN-SUFFIX,4tern.com,Proxy
 DOMAIN-SUFFIX,85.17.73.31,Proxy
@@ -132,6 +132,7 @@ DOMAIN-SUFFIX,avmoo.pw,Proxy
 DOMAIN-SUFFIX,javmoo.xyz,Proxy
 DOMAIN-SUFFIX,javtag.com,Proxy
 DOMAIN-SUFFIX,javzoo.com,Proxy
+DOMAIN-SUFFIX,d3rhr7kgmtrq1v.cloudfront.net,Proxy
 DOMAIN-SUFFIX,4irc.com,Proxy
 DOMAIN-SUFFIX,b0ne.com,Proxy
 DOMAIN-SUFFIX,chatnook.com,Proxy
@@ -209,7 +210,9 @@ DOMAIN-SUFFIX,recaptcha.net,Proxy
 DOMAIN-SUFFIX,registry.google,Proxy
 DOMAIN-SUFFIX,sipml5.org,Proxy
 DOMAIN-SUFFIX,tensorflow.org,Proxy
+DOMAIN-SUFFIX,waveprotocol.org,Proxy
 DOMAIN-SUFFIX,webmproject.org,Proxy
+DOMAIN-SUFFIX,webrtc.org,Proxy
 DOMAIN-SUFFIX,whatbrowser.org,Proxy
 DOMAIN-SUFFIX,withgoogle.com,Proxy
 DOMAIN-SUFFIX,youtu.be,Proxy
@@ -586,6 +589,7 @@ DOMAIN-SUFFIX,bodog88.com,Proxy
 DOMAIN-SUFFIX,bolehvpn.net,Proxy
 DOMAIN-SUFFIX,bonbonme.com,Proxy
 DOMAIN-SUFFIX,bonbonsex.com,Proxy
+DOMAIN-SUFFIX,bongacams.com,Proxy
 DOMAIN-SUFFIX,boobstagram.com,Proxy
 DOMAIN-SUFFIX,book.com.tw,Proxy
 DOMAIN-SUFFIX,bookepub.com,Proxy
@@ -862,6 +866,7 @@ DOMAIN-SUFFIX,cn-proxy.com,Proxy
 DOMAIN-SUFFIX,cnproxy.com,Proxy
 DOMAIN-SUFFIX,blog.cnyes.com,Proxy
 DOMAIN-SUFFIX,news.cnyes.com,Proxy
+DOMAIN-SUFFIX,coat.co.jp,Proxy
 DOMAIN-SUFFIX,cochina.co,Proxy
 DOMAIN-SUFFIX,cochina.org,Proxy
 DOMAIN-SUFFIX,code1984.com,Proxy
@@ -1236,6 +1241,7 @@ DOMAIN-SUFFIX,fanyue.info,Proxy
 DOMAIN-SUFFIX,farwestchina.com,Proxy
 DOMAIN-SUFFIX,en.favotter.net,Proxy
 DOMAIN-SUFFIX,global.ssl.fastly.net,Proxy
+DOMAIN-SUFFIX,fast.wistia.com,Proxy
 DOMAIN-SUFFIX,fastssh.com,Proxy
 DOMAIN-SUFFIX,faststone.org,Proxy
 DOMAIN-SUFFIX,favstar.fm,Proxy
@@ -1399,6 +1405,7 @@ DOMAIN-SUFFIX,fzlm.com,Proxy
 DOMAIN-SUFFIX,gabocorp.com,Proxy
 DOMAIN-SUFFIX,gaeproxy.com,Proxy
 DOMAIN-SUFFIX,gaforum.org,Proxy
+DOMAIN-SUFFIX,galaxymacau.com,Proxy
 DOMAIN-SUFFIX,galenwu.com,Proxy
 DOMAIN-SUFFIX,game735.com,Proxy
 DOMAIN-SUFFIX,gamebase.com.tw,Proxy
@@ -2113,6 +2120,7 @@ DOMAIN-SUFFIX,liudejun.com,Proxy
 DOMAIN-SUFFIX,liuhanyu.com,Proxy
 DOMAIN-SUFFIX,liujianshu.com,Proxy
 DOMAIN-SUFFIX,liuxiaotong.com,Proxy
+DOMAIN-SUFFIX,livedoor.jp,Proxy
 DOMAIN-SUFFIX,liveleak.com,Proxy
 DOMAIN-SUFFIX,livestation.com,Proxy
 DOMAIN-SUFFIX,livestream.com,Proxy
@@ -2122,6 +2130,7 @@ DOMAIN-SUFFIX,livevideo.com,Proxy
 DOMAIN-SUFFIX,liwangyang.com,Proxy
 DOMAIN-SUFFIX,lizhizhuangbi.com,Proxy
 DOMAIN-SUFFIX,lkcn.net,Proxy
+DOMAIN-SUFFIX,load.to,Proxy
 DOMAIN-SUFFIX,lobsangwangyal.com,Proxy
 DOMAIN-SUFFIX,localdomain.ws,Proxy
 DOMAIN-SUFFIX,localpresshk.com,Proxy
@@ -2157,8 +2166,10 @@ DOMAIN-SUFFIX,luke54.com,Proxy
 DOMAIN-SUFFIX,luke54.org,Proxy
 DOMAIN-SUFFIX,lupm.org,Proxy
 DOMAIN-SUFFIX,lushstories.com,Proxy
+DOMAIN-SUFFIX,luxebc.com,Proxy
 DOMAIN-SUFFIX,lvhai.org,Proxy
 DOMAIN-SUFFIX,lvv2.com,Proxy
+DOMAIN-SUFFIX,lyfhk.net,Proxy
 DOMAIN-SUFFIX,m-team.cc,Proxy
 DOMAIN-SUFFIX,macrovpn.com,Proxy
 DOMAIN-SUFFIX,macts.com.tw,Proxy
@@ -2177,6 +2188,9 @@ DOMAIN-SUFFIX,maiio.net,Proxy
 DOMAIN-SUFFIX,mail-archive.com,Proxy
 DOMAIN-SUFFIX,malaysiakini.com,Proxy
 DOMAIN-SUFFIX,makemymood.com,Proxy
+DOMAIN-SUFFIX,maniash.com,Proxy
+DOMAIN-SUFFIX,mansion.com,Proxy
+DOMAIN-SUFFIX,mansionpoker.com,Proxy
 DOMAIN-SUFFIX,markmail.org,Proxy
 DOMAIN-SUFFIX,martau.com,Proxy
 DOMAIN-SUFFIX,blog.martinoei.com,Proxy
@@ -2356,6 +2370,7 @@ DOMAIN-SUFFIX,naol.ca,Proxy
 DOMAIN-SUFFIX,uighur.narod.ru,Proxy
 DOMAIN-SUFFIX,cyberghost.natado.com,Proxy
 DOMAIN-SUFFIX,national-lottery.co.uk,Proxy
+DOMAIN-SUFFIX,news.nationalgeographic.com,Proxy
 DOMAIN-SUFFIX,nationsonline.org,Proxy
 DOMAIN-SUFFIX,navyfamily.navy.mil,Proxy
 DOMAIN-SUFFIX,navyreserve.navy.mil,Proxy
@@ -2454,7 +2469,6 @@ DOMAIN-SUFFIX,nwtca.org,Proxy
 DOMAIN-SUFFIX,nyaa.eu,Proxy
 DOMAIN-SUFFIX,nyaa.se,Proxy
 DOMAIN-SUFFIX,nydus.ca,Proxy
-DOMAIN-SUFFIX,nyt.com,Proxy
 DOMAIN-SUFFIX,nytco.com,Proxy
 DOMAIN-SUFFIX,nyti.ms,Proxy
 DOMAIN-SUFFIX,nytimes.com,Proxy
