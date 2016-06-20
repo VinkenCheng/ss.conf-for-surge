@@ -1,6 +1,6 @@
 [General]
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, *.gmcc.net, ::ffff:0:0:0:0/1, ::ffff:128.0:0:0/1
-bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+bypass-tun = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,127.0.0.1/24
 dns-server = 208.67.222.222,208.67.220.220,223.6.6.6,223.5.5.5,114.114.114.114,114.114.115.115
 loglevel = notify
 
@@ -73,6 +73,11 @@ IP-CIDR,23.20.0.0/14,Proxy
 IP-CIDR,50.16.0.0/14,Proxy
 IP-CIDR,67.202.0.0/18,Proxy
 
+// LAN
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/24,DIRECT
 
 
 FINAL,ChinaProxy

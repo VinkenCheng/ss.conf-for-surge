@@ -9,6 +9,7 @@ import re
 import datetime
 import certifi
 import codecs
+import string
 
 
 def getList(listUrl):
@@ -50,6 +51,21 @@ def whiteListCheck():
     whitelistTxt.close()
 
 
+def list_in_frd(item):
+    frdfile = './template/force_remote_dns_list'
+    # TODO delete blanklines
+    frd = codecs.open(frdfile, 'r', 'utf-8')
+    for frditem in frd.readlines():
+        frditem = frditem.replace('\n', '')
+        #if (string.find(item, frditem)!=-1):
+        #    return True
+        try:
+            found = item.index(frditem)
+            return True
+        except ValueError:
+            continue
+    return False
+
 
 def getGfwList():
     # the url of gfwlist
@@ -57,23 +73,20 @@ def getGfwList():
 
     comment_pattern = '^\!|\[|^@@|^\d+\.\d+\.\d+\.\d+'
     domain_pattern = '([\w\-\_]+\.[\w\.\-\_]+)[\/\*]*'
-    
+
     # gfw list
     tmpfile = './list/tmp'
-    # force-remote-dns list
-    frdfile = './template/force_remote_dns_list'
-    
-    # TODO add 'force-remote-dns'
 
     gfwListTxt = codecs.open('./list/gfwlist.txt', 'w', 'utf-8')
     gfwListTxt.write('# SS config file for surge with gfw list \n')
     gfwListTxt.write('# updated on ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '\n')
     gfwListTxt.write('\n')
+    #gfwListTxt.write('__proxy_fixed__')
+    #gfwListTxt.close()
 
     try:
 
         data = getList(baseurl)
-
         content = codecs.decode(data, 'base64_codec').decode('utf-8')
 
         # write the decoded content to file then read line by line
@@ -83,6 +96,7 @@ def getGfwList():
         print('GFW list fetched, writing...')
     except:
         print('GFW list fetch failed, use tmp instead...')
+
     tfs = codecs.open(tmpfile, 'r', 'utf-8')
 
     # Store all domains, deduplicate records
@@ -91,18 +105,24 @@ def getGfwList():
     # Write list
     for line in tfs.readlines():
 
-     if re.findall(comment_pattern, line):
-         continue
-     else:
-         domain = re.findall(domain_pattern, line)
-         if domain:
-             try:
-                 found = domainList.index(domain[0])
-             except ValueError:
-                 domainList.append(domain[0])
-                 gfwListTxt.write('DOMAIN-SUFFIX,%s,Proxy\n' % (domain[0]))
-         else:
-             continue
+        if re.findall(comment_pattern, line):
+            continue
+        else:
+            domain = re.findall(domain_pattern, line)
+            if domain:
+                try:
+                    found = domainList.index(domain[0])
+                except ValueError:
+                    #if list_in_frd(domain[0]):
+                    #    domaintmp = domain[0] + ',Proxy,force-remote-dns'
+                    #else:
+                    #    domaintmp = domain[0] + ',Proxy'
+                    #domainList.append(domaintmp)
+                    #gfwListTxt.write('DOMAIN-SUFFIX,%s\n' % (domaintmp))
+                    domainList.append(domain[0])
+                    gfwListTxt.write('DOMAIN-SUFFIX,%s,Proxy,force-remote-dns\n' % (domain[0]))
+            else:
+                continue
 
     tfs.close()
     gfwListTxt.close()
