@@ -1,6 +1,6 @@
 [Proxy]
 💊DIRECT = direct
-🇯🇵JP = custom,server,port,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module,ota=true
+🇯🇵JP = custom,server,port,aes-256-cfb,your_password_here,https://github.com/VinkenCheng/ss.conf-for-surge/raw/master/ss.module
 
 [Proxy Group]
 ChinaProxy = select,💊DIRECT

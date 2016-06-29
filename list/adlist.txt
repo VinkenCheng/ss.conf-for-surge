@@ -1,7 +1,7 @@
 # Ad's list come from iyee/main.conf(dead :( ). 
 # thx  https://gist.github.com/iyee/2e27c124af2f7a4f0d5a 
 # This AD list is not update anymore... 
-# updated on 2016-06-20 13:25:15
+# updated on 2016-06-29 15:42:20
 
 DOMAIN-KEYWORD,analytics,REJECT
 DOMAIN-KEYWORD,syndication,REJECT
