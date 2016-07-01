@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: CydtadRx79UnDoKt/m1zdg
+! Checksum: jEk4KpspahDBslNfeof8WA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 22 Jun 2016 13:16:08 +0800
+! Last Modified: Thu, 30 Jun 2016 12:33:21 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://raw.githubusercontent.com/gfwlist/gfwlist/master/COPYING.txt
@@ -15,7 +15,7 @@
 ! or suggestion / enhancement at issue tracker:
 ! https://github.com/gfwlist/gfwlist/issues/.
 
-!---------403 Forbidden & URL Redirects---------
+!---------403/451 & URL Redirects---------
 ||4tern.com
 !--ehentai
 |http://85.17.73.31/
@@ -40,7 +40,7 @@
 ||desipro.de
 ||dish.com
 |http://img.dlsite.jp/
-||share.dmhy.org
+!--||share.dmhy.org
 ||dmm.co.jp
 !--||dmm.com
 .expekt.com
@@ -56,6 +56,7 @@
 ||fxnetworks.com
 ||gettyimages.com
 ||getuploader.com
+|https://github.com/programthink/zhao
 ||glass8.eu
 ||glype.com
 ||go141.com
@@ -139,6 +140,8 @@
 ||twerkingbutt.com
 ||vegasred.com
 ||vevo.com
+|http://viu.tv/ch/
+|http://viu.tv/encore/
 |http://ecsm.vs.com/
 ||wanz-factory.com
 ||wheretowatch.com
@@ -1049,6 +1052,7 @@ chinagfw.org
 .chinahush.com
 chinalaborwatch.org
 chinalawtranslate.com
+.chinapost.com.tw/taiwan/national/national-news
 chinaxchina.com/howto
 .chinainperspective.com
 chinainperspective.net/ArtShow.aspx?
@@ -1511,6 +1515,7 @@ emilylau.org.hk
 chinese.engadget.com
 englishforeveryone.org
 ||englishfromengland.co.uk
+.enlighten.org.tw
 ||entermap.com
 .entnt.com
 |http://entnt.com
@@ -1902,6 +1907,7 @@ hk.frienddy.com/hk
 .ftchinese.com/story/001062794
 .ftchinese.com/story/001063160
 .ftchinese.com/story/001065287
+.ftchinese.com/story/001066465
 .ftchinese.com/story/001066959
 .ftchinese.com/story/001067435
 www.ftchinese.com/story/001067479
@@ -1925,6 +1931,7 @@ funp.com
 ||futuremessage.org
 .fux.com
 .fuyin.net
+.fuyindiantai.org
 .fuyu.org.tw
 ||fw.cm
 fzh999.com
@@ -3509,6 +3516,8 @@ nuzcom.com
 ||nyaa.eu
 ||nyaa.se
 .nydus.ca
+nylon-angel.com
+nylonstockingsonline.com
 !--||nyt.com
 ||nytco.com
 |http://nyti.ms/
@@ -3522,8 +3531,10 @@ nysingtao.com
 
 !--------------------OO-------------------------
 observechina.net
+.obutu.com
 ocaspro.com
 oclp.hk
+.ocreampies.com
 ||october-review.org
 offbeatchina.com
 officeoftibet.com
@@ -3534,6 +3545,8 @@ www2.ohchr.org/english/bodies/cat/docs/ngos/II_China_41.pdf
 .oiktv.com
 oizoblog.com
 .okayfreedom.com
+||okayfreedom.com
+okk.tw
 old-cat.net
 ||olumpo.com
 .olympicwatch.org
@@ -4130,7 +4143,7 @@ home.sina.com
 ||magazines.sina.com.tw
 news.sina.com.hk
 news.sina.com.tw
-|http://news.sinchew.com.my
+news.sinchew.com.my
 .sinchew.com.my/node/
 .sinchew.com.my/taxonomy/term
 .singaporepools.com.sg
@@ -4209,6 +4222,7 @@ sohcradio.com
 ||sohcradio.com
 ||www.somee.com
 ||sorting-algorithms.com
+.sostibet.org
 .soumo.info
 ||soup.io/
 @@||static.soup.io
@@ -4372,6 +4386,7 @@ tahr.org.tw
 .taipeisociety.org
 ||taipeisociety.org
 .taiwanbible.com
+.taiwancon.com
 .taiwandaily.net
 ||taiwandaily.net
 .taiwandc.org
@@ -4491,6 +4506,7 @@ tiananmenmother.org
 ||tiandixing.org
 .tianhuayuan.com
 .tianlawoffice.com
+||tianti.io
 tiantibooks.org
 .tianzhu.org
 .tibet.at
@@ -4640,6 +4656,7 @@ torrentprivacy.com
 ||torrenty.org
 ||torrentz.eu
 ||torvpn.com
+||totalvpn.com
 ||toutfr.com
 towngain.com
 .tparents.org
